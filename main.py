@@ -20,10 +20,10 @@ for number in range(nr_numbers):
 for symbol in range(nr_symbols):
     password.append(random.choice(symbols))
 
-random.shuffle(password)
+random.shuffle(password)  
 generated_password = ""
 
-for item in password:
-    generated_password += item
+for char in password:
+    generated_password += char
 
 print(f"Here is your password: {generated_password}")
